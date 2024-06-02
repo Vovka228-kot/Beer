@@ -1,0 +1,35 @@
+
+
+    def search_product(self, query, search_engine):
+        # Пошук товару за запитом з використанням переданого пошукового двигуна
+        results = search_engine.search(query)
+        # Обробка результатів пошуку
+        pass
+
+    def display_product(self, display_engine):
+        # Відображення інформації про товар за допомогою переданого двигуна відображення
+        display_engine.display(self)
+        pass
+
+    def order_product(self, quantity, order_service):
+        # Замовлення товару з використанням переданого сервісу замовлення
+        order_service.order(self, quantity)
+        pass
+
+
+class SearchEngine:
+    def search(self, query):
+        # Логіка пошуку
+        pass
+
+
+class DisplayEngine:
+    def display(self, product):
+        # Логіка відображення
+        pass
+
+
+class OrderService:
+    def order(self, product, quantity):
+        # Логіка замовлення
+        pass

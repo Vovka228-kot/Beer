@@ -1,0 +1,20 @@
+def process_data(data):
+    """
+    Оновлений метод, який використовує рефакторінг для поліпшення.
+    """
+    def double_even_numbers(nums):
+        return [num * 2 for num in nums if num % 2 == 0]
+
+    def filter_numbers_gt_10(nums):
+        return [num for num in nums if num > 10]
+
+    processed_data = double_even_numbers(data)
+    processed_data = filter_numbers_gt_10(processed_data)
+    
+    final_result = sum(processed_data)
+    
+    return final_result
+
+# Виклик оновленого методу для обробки даних
+result_refactored = process_data(data)
+print("Результат оновленого методу:", result_refactored)
